@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>F.A. López Fernández – Abogado</title>
+
+    <!-- Fuentes: Cinzel Decorative para las iniciales y Proza Libre para el resto -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Proza+Libre:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* Reset básico */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background: #000;
+      }
+
+      .header {
+        display: flex;
+        align-items: center;
+      }
+
+      /* 1) Monograma */
+      .monogram {
+        display: flex;
+        font-family: "Cinzel Decorative", serif;
+        font-size: 8rem;
+        line-height: 1;
+      }
+      .monogram .L {
+        color: #7e1e23; /* burdeos */
+        margin-right: -1rem;
+      }
+      .monogram .F {
+        color: #212d4b; /* azul oscuro */
+      }
+
+      /* 2) Separador vertical */
+      .separator-vertical {
+        width: 2px;
+        height: 6rem;
+        background: #212d4b;
+        margin: 0 2rem;
+      }
+
+      /* 3) Nombre completo */
+      .name-block {
+        display: flex;
+        flex-direction: column;
+        font-family: "Proza Libre", sans-serif;
+        color: #212d4b;
+        line-height: 1.1;
+      }
+      .name-block .first {
+        font-size: 2rem;
+        font-weight: 400;
+      }
+      .name-block .last {
+        font-size: 2.5rem;
+        font-weight: 600;
+      }
+
+      /* 4) Etiqueta “ABOGADO” centrada */
+      .tag {
+        display: block; /* para poder usar text-align */
+        width: 100%; /* ocupa todo el ancho del contenedor */
+        margin-top: 1rem;
+        text-align: center; /* centra el texto dentro de sí misma */
+        font-family: "Proza Libre", sans-serif;
+        font-weight: 200; /* thin */
+        font-size: 1.25rem;
+        letter-spacing: 0.5em;
+        color: #7e1e23;
+        background: transparent;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="header">
+      <!-- 1) Monograma LF -->
+      <div class="monogram">
+        <span class="L">L</span>
+        <span class="F">F</span>
+      </div>
+
+      <!-- 2) Línea vertical -->
+      <div class="separator-vertical"></div>
+
+      <!-- 3) Nombre y etiqueta -->
+      <div>
+        <div class="name-block">
+          <div class="first">FRANCISCO ANTONIO</div>
+          <div class="last">LÓPEZ FERNÁNDEZ</div>
+        </div>
+        <!-- 4) “ABOGADO” centrado -->
+        <span class="tag">ABOGADO</span>
+      </div>
+    </header>
+  </body>
+</html>
