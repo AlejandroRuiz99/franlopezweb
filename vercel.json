@@ -1,15 +1,6 @@
 {
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/next"
-    }
-  ],
-  "functions": {
-    "app/**/*.js": {
-      "includeFiles": "public/**"
-    }
-  },
+  "buildCommand": "npm run build",
+  "outputDirectory": "out",
   "rewrites": [
     {
       "source": "/(.*)",
