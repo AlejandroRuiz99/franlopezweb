@@ -22,21 +22,21 @@ export default function SocialLinks() {
     },
     {
       name: 'TikTok',
-      url: 'https://tiktok.com/@franciscolopezabogado',
+      url: 'https://www.tiktok.com/@franciscolopez.abogado?_t=ZN-8ycT4TD9TXy&_r=1',
       icon: '/icons/tiktok.svg',
       color: 'hover:bg-black',
       bgColor: 'bg-black'
     },
     {
       name: 'Instagram',
-      url: 'https://instagram.com/franciscolopezabogado',
+      url: 'https://instagram.com/lopezabogadofrancisco',
       icon: '/icons/instagram.svg',
       color: 'hover:bg-pink-600',
       bgColor: 'bg-gradient-to-r from-purple-500 to-pink-500'
     },
     {
       name: 'LinkedIn',
-      url: 'https://linkedin.com/in/francisco-lopez-fernandez',
+      url: 'https://www.linkedin.com/in/francisco-l%C3%B3pez-795429257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
       icon: '/icons/linkedin.svg',
       color: 'hover:bg-blue-700',
       bgColor: 'bg-blue-600'

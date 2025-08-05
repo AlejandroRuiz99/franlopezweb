@@ -7,12 +7,14 @@ import emailjs from 'emailjs-com'
 interface FormData {
   name: string
   email: string
+  phone: string
   message: string
 }
 
 interface FormErrors {
   name?: string
   email?: string
+  phone?: string
   message?: string
 }
 
@@ -20,6 +22,7 @@ export default function Contact() {
   const [formData, setFormData] = useState<FormData>({
     name: '',
     email: '',
+    phone: '',
     message: ''
   })
   const [errors, setErrors] = useState<FormErrors>({})
@@ -39,6 +42,12 @@ export default function Contact() {
       newErrors.email = 'Por favor ingresa un correo electrónico válido'
     }
 
+    if (!formData.phone.trim()) {
+      newErrors.phone = 'El teléfono es requerido'
+    } else if (!/^[+]?[\d\s\-\(\)]{9,}$/.test(formData.phone)) {
+      newErrors.phone = 'Por favor ingresa un número de teléfono válido'
+    }
+
     if (!formData.message.trim()) {
       newErrors.message = 'El mensaje es requerido'
     } else if (formData.message.trim().length < 10) {
@@ -51,7 +60,7 @@ export default function Contact() {
 
   useEffect(() => {
     // Inicializar EmailJS
-    emailjs.init("YOUR_PUBLIC_KEY") // Reemplazar con tu clave pública de EmailJS
+    emailjs.init("0wqQdiIzXhhX7s4fE")
   }, [])
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -67,19 +76,20 @@ export default function Contact() {
         to_email: 'lopezabogadofrancisco@gmail.com', // Tu correo
         from_name: formData.name,
         from_email: formData.email,
+        from_phone: formData.phone,
         message: formData.message,
         reply_to: formData.email
       }
 
       // Enviar email usando EmailJS
       await emailjs.send(
-        'YOUR_SERVICE_ID', // Reemplazar con tu Service ID de EmailJS
-        'YOUR_TEMPLATE_ID', // Reemplazar con tu Template ID de EmailJS
+        'service_648r0iq',
+        'template_3nqkvwl',
         templateParams
       )
 
       setSubmitted(true)
-      setFormData({ name: '', email: '', message: '' })
+      setFormData({ name: '', email: '', phone: '', message: '' })
     } catch (error) {
       console.error('Error al enviar el formulario:', error)
       alert('Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo.')
@@ -224,6 +234,35 @@ export default function Contact() {
                     >
                       <span className="mr-1">⚠️</span>
                       {errors.email}
+                    </motion.p>
+                  )}
+                </div>
+              </div>
+
+              <div>
+                <label htmlFor="phone" className="block text-sm font-semibold text-gray-700 mb-2 md:mb-3">
+                  Teléfono *
+                </label>
+                <div className="relative">
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    className={`w-full px-3 md:px-4 py-3 md:py-4 border-2 rounded-xl focus:ring-4 focus:ring-lawyer-burgundy/20 focus:border-lawyer-burgundy transition-all duration-200 text-base md:text-lg ${
+                      errors.phone ? 'border-red-500' : 'border-gray-300'
+                    }`}
+                    placeholder="+34 600 000 000"
+                  />
+                  {errors.phone && (
+                    <motion.p 
+                      initial={{ opacity: 0, y: -10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      className="text-red-500 text-sm mt-2 flex items-center"
+                    >
+                      <span className="mr-1">⚠️</span>
+                      {errors.phone}
                     </motion.p>
                   )}
                 </div>
