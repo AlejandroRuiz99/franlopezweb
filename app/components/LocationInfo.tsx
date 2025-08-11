@@ -82,10 +82,10 @@ export default function LocationInfo() {
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.5, delay: 0.1 * index }}
                     viewport={{ once: true }}
-                    className="flex justify-between items-center py-2 border-b border-gray-100 last:border-b-0"
+                    className="flex justify-between items-center py-2 border-b border-gray-100 last:border-b-0 gap-2"
                   >
-                    <span className="font-medium text-gray-700">{schedule.day}</span>
-                    <span className="text-lawyer-burgundy font-semibold">{schedule.hours}</span>
+                    <span className="font-medium text-gray-700 flex-shrink-0">{schedule.day}</span>
+                    <span className="text-lawyer-burgundy font-semibold text-right whitespace-nowrap text-xs sm:text-sm">{schedule.hours}</span>
                   </motion.div>
                 ))}
               </div>
@@ -98,11 +98,11 @@ export default function LocationInfo() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
             viewport={{ once: true }}
-            className="space-y-4 lg:space-y-6 order-1 lg:order-2"
+            className="flex flex-col space-y-6 order-1 lg:order-2"
           >
             {/* Mapa */}
-            <div className="h-48 sm:h-64 lg:h-80">
-              <div className="map-container h-full rounded-xl overflow-hidden shadow-lg">
+            <div className="w-full">
+              <div className="h-48 sm:h-64 lg:h-80 w-full rounded-xl overflow-hidden shadow-lg">
                 <iframe
                   src={googleMapsEmbedUrl}
                   width="100%"
@@ -112,6 +112,7 @@ export default function LocationInfo() {
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                   title="Ubicación del Despacho de Francisco A. López Fernández"
+                  className="w-full h-full"
                 />
               </div>
             </div>
@@ -122,10 +123,10 @@ export default function LocationInfo() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
               viewport={{ once: true }}
-              className="bg-lawyer-navy text-white p-6 rounded-xl"
+              className="bg-lawyer-navy text-white p-4 sm:p-6 rounded-xl w-full"
             >
               <h3 className="text-lg font-semibold mb-3">💡 Cita Previa</h3>
-              <p className="text-gray-200">
+              <p className="text-gray-200 text-sm sm:text-base">
                 Se recomienda concertar cita previa para asegurar la disponibilidad. 
                 Consultas urgentes disponibles vía WhatsApp.
               </p>
