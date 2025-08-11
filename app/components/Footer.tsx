@@ -76,7 +76,7 @@ export default function Footer() {
                   <span className="text-white text-xs md:text-sm">✉️</span>
                 </div>
                 <div>
-                  <p className="font-medium text-xs md:text-sm">lopezabogadofrancisco@gmail.com</p>
+                  <p className="font-medium text-xs md:text-sm">info@lopezfernandezabogado.com</p>
                   <p className="text-gray-300 text-xs md:text-sm">Consulta por email</p>
                 </div>
               </div>

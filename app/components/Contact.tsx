@@ -73,7 +73,7 @@ export default function Contact() {
     try {
       // Configurar los parámetros del email
       const templateParams = {
-        to_email: 'lopezabogadofrancisco@gmail.com', // Tu correo
+        to_email: 'info@lopezfernandezabogado.com', // Tu correo
         from_name: formData.name,
         from_email: formData.email,
         from_phone: formData.phone,
@@ -345,7 +345,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="font-semibold text-base md:text-lg">Email</p>
-                  <p className="text-gray-200 text-sm md:text-base">lopezabogadofrancisco@gmail.com</p>
+                  <p className="text-gray-200 text-sm md:text-base">info@lopezfernandezabogado.com</p>
                 </div>
               </div>
               

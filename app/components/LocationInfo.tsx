@@ -25,14 +25,14 @@ export default function LocationInfo() {
           Ubicación y Horarios
         </h2>
         
-        <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
+        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-12">
           {/* Información de contacto y horarios */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
-            className="space-y-8"
+            className="space-y-6 lg:space-y-8 order-2 lg:order-1"
           >
             {/* Dirección y Contacto */}
             <div className="bg-lawyer-gray p-6 rounded-xl">
@@ -52,8 +52,8 @@ export default function LocationInfo() {
                 </div>
                 <div className="flex items-center space-x-2">
                   <span className="text-lg">✉️</span>
-                  <a href="mailto:lopezabogadofrancisco@gmail.com" className="text-lawyer-burgundy hover:text-lawyer-navy transition-colors font-medium">
-                    lopezabogadofrancisco@gmail.com
+                  <a href="mailto:info@lopezfernandezabogado.com" className="text-lawyer-burgundy hover:text-lawyer-navy transition-colors font-medium">
+                    info@lopezfernandezabogado.com
                   </a>
                 </div>
               </div>
@@ -98,10 +98,10 @@ export default function LocationInfo() {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
             viewport={{ once: true }}
-            className="space-y-6"
+            className="space-y-4 lg:space-y-6 order-1 lg:order-2"
           >
             {/* Mapa */}
-            <div className="h-64 md:h-80">
+            <div className="h-48 sm:h-64 lg:h-80">
               <div className="map-container h-full rounded-xl overflow-hidden shadow-lg">
                 <iframe
                   src={googleMapsEmbedUrl}
