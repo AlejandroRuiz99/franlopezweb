@@ -31,8 +31,10 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-gray-300 mb-6 text-base md:text-lg leading-relaxed">
-              Abogado colegiado con amplia experiencia en asesoramiento y defensa legal. 
-              Comprometido en brindar soluciones legales reales y cercanas, con atención personalizada en Bolaños de Calatrava y consultas online para toda España.
+              <strong>Abogado especializado en Bolaños de Calatrava, Ciudad Real</strong> con amplia experiencia en 
+              derecho civil, penal, laboral y familiar. Bufete de abogados comprometido en brindar 
+              soluciones legales reales y cercanas, con atención personalizada en Bolaños de Calatrava 
+              y servicios jurídicos online para toda España y Castilla-La Mancha.
             </p>
             <div className="flex items-center space-x-4">
               <div className="flex items-center space-x-2">
@@ -138,7 +140,8 @@ export default function Footer() {
             </div>
             <div className="flex flex-col md:flex-row items-center space-y-1 md:space-y-0 md:space-x-6 text-xs md:text-sm">
               <span className="text-gray-400">Colegiado 3323 ICACR</span>
-              <span className="text-white font-medium">Abogado en Ciudad Real</span>
+              <span className="text-white font-medium">Abogado Bolaños de Calatrava</span>
+              <span className="text-gray-400">Servicios Jurídicos Ciudad Real</span>
             </div>
           </div>
         </div>

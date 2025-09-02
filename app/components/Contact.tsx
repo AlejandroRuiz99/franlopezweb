@@ -369,7 +369,7 @@ export default function Contact() {
                 <div className="w-5 h-5 md:w-6 md:h-6 bg-lawyer-burgundy rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                   <span className="text-white text-xs md:text-sm">✓</span>
                 </div>
-                <p className="text-gray-700 text-sm md:text-base">Consulta presenciales en Bolaños de Calatrava y consultas online para toda España</p>
+                <p className="text-gray-700 text-sm md:text-base">Consultas presenciales en Bolaños de Calatrava y consultas online para toda España</p>
               </div>
               <div className="flex items-start space-x-3">
                 <div className="w-5 h-5 md:w-6 md:h-6 bg-lawyer-burgundy rounded-full flex items-center justify-center flex-shrink-0 mt-1">

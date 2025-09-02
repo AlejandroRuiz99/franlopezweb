@@ -25,7 +25,9 @@ export default function Hero() {
             </h2>
             
             <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-6 md:mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-              Asesoramiento y defensa legal en Bolaños de Calatrava, Ciudad Real. 
+              <strong>Abogado especializado en Bolaños de Calatrava, Ciudad Real</strong>. 
+              Servicios jurídicos profesionales en derecho civil, penal y laboral. 
+              Consulta presencial en Bolaños de Calatrava y online para toda España. 
               Compromiso, cercanía y soluciones reales para tus necesidades legales.
             </p>
             
