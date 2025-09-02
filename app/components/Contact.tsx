@@ -83,7 +83,7 @@ export default function Contact() {
 
       // Enviar email usando EmailJS
       await emailjs.send(
-        'service_648r0iq',
+        'service_s8orhcl',
         'template_3nqkvwl',
         templateParams
       )
