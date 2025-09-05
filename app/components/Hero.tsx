@@ -26,7 +26,8 @@ export default function Hero() {
             
             <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-6 md:mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
               <strong>Abogado especializado en Bolaños de Calatrava, Ciudad Real</strong>. 
-              Servicios jurídicos profesionales en extranjería, seguridad social, derecho civil, penal y laboral. 
+              Servicios profesionales jurídicos en distintas áreas del derecho como en Extranjería,
+              Seguridad Social, Civil(familia, sucesiones, etc), Administrativo y Laboral. 
               Consulta presencial en Bolaños de Calatrava y online para toda España. 
               Compromiso, cercanía y soluciones reales para tus necesidades legales.
             </p>

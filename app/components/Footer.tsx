@@ -31,8 +31,8 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-gray-300 mb-6 text-base md:text-lg leading-relaxed">
-              <strong>Abogado especializado en Bolaños de Calatrava, Ciudad Real</strong> con amplia experiencia en 
-              derecho civil, penal, laboral y familiar. Bufete de abogados comprometido en brindar 
+              <strong>Abogado especializado en Bolaños de Calatrava, Ciudad Real</strong> con amplia experiencia en diversas áreas del derecho:
+              Extranjería, seguridad social, civil(familia, sucesiones, etc), Administrativo y Laboral. Bufete de abogados comprometido en brindar 
               soluciones legales reales y cercanas, con atención personalizada en Bolaños de Calatrava 
               y servicios jurídicos online para toda España y Castilla-La Mancha.
             </p>

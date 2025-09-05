@@ -37,7 +37,7 @@ export default function About() {
             viewport={{ once: true }}
           >
             Como <strong>abogado colegiado en Bolaños de Calatrava, Ciudad Real</strong>, ofrezco 
-            asesoramiento y defensa legal especializada en <strong>derecho civil, penal, laboral y familiar</strong>. 
+            asesoramiento y defensa legal especializada en distintas áreas del derecho. 
             Atiendo tanto en mi despacho de Bolaños de Calatrava como mediante consulta online para 
             toda Castilla-La Mancha y España. Con un trato cercano, claro y totalmente orientado a tus necesidades. 
             Tu problema legal es único, y mi objetivo es darte la mejor solución jurídica posible.
