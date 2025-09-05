@@ -11,7 +11,7 @@ export default function About() {
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
-        <h2 className="text-3xl md:text-4xl font-bold text-lawyer-navy mb-8 font-proza">
+        <h2 className="text-3xl md:text-4xl font-bold text-lawyer-navy mb-8 font-cinzel">
           Sobre mí
         </h2>
         
@@ -36,10 +36,10 @@ export default function About() {
             transition={{ duration: 0.8, delay: 0.5 }}
             viewport={{ once: true }}
           >
-            Como <strong>abogado colegiado en Bolaños de Calatrava, Ciudad Real</strong>, ofrezco 
-            asesoramiento y defensa legal especializada en distintas áreas del derecho. 
-            Atiendo tanto en mi despacho de Bolaños de Calatrava como mediante consulta online para 
-            toda Castilla-La Mancha y España. Con un trato cercano, claro y totalmente orientado a tus necesidades. 
+            Como <strong>abogado colegiado en Bolaños de Calatrava, Ciudad Real</strong>, ofrezco asesoramiento y defensa legal especializada en distintas áreas del derecho.
+            <br className="hidden md:block" />
+            Atiendo tanto en mi despacho de Bolaños de Calatrava como mediante consulta online para toda Castilla-La Mancha y España. Con un trato cercano, claro y totalmente orientado a tus necesidades.
+            <br className="hidden md:block" />
             Tu problema legal es único, y mi objetivo es darte la mejor solución jurídica posible.
           </motion.p>
           

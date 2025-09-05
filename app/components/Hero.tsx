@@ -20,15 +20,17 @@ export default function Hero() {
               <span className="block text-lawyer-burgundy">Fernández</span>
             </h1>
             
-            <h2 className="text-xl sm:text-2xl md:text-3xl text-lawyer-dark-gray mb-6 md:mb-8 font-proza">
+            <h2 className="text-xl sm:text-2xl md:text-3xl text-lawyer-dark-gray mb-6 md:mb-8 font-cinzel">
               <span className="text-lawyer-burgundy">Abogado</span> Colegiado 3323 ICACR
             </h2>
             
             <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-6 md:mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-              <strong>Abogado especializado en Bolaños de Calatrava, Ciudad Real</strong>. 
-              Servicios profesionales jurídicos en distintas áreas del derecho como en Extranjería,
-              Seguridad Social, Civil(familia, sucesiones, etc), Administrativo y Laboral. 
-              Consulta presencial en Bolaños de Calatrava y online para toda España. 
+              <strong>Abogado especializado en Bolaños de Calatrava, Ciudad Real</strong>.
+              <br className="hidden md:block" />
+              Servicios profesionales jurídicos en distintas áreas del derecho como en Extranjería, Seguridad Social, Civil (familia, sucesiones, etc.), Administrativo y Laboral.
+              <br className="hidden md:block" />
+              Consulta presencial en Bolaños de Calatrava y online para toda España.
+              <br className="hidden md:block" />
               Compromiso, cercanía y soluciones reales para tus necesidades legales.
             </p>
             

@@ -156,9 +156,9 @@ export default function Contact() {
         viewport={{ once: true }}
         className="text-center mb-12"
       >
-                          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-lawyer-navy mb-4 md:mb-6 font-cinzel">
-                    Reserva una Consulta
-                  </h2>
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-lawyer-navy mb-4 md:mb-6 font-cinzel">
+          Reserva una Consulta
+        </h2>
         <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
           ¿Tienes una consulta legal? No dudes en contactarme. Te responderé de forma personalizada y confidencial.
         </p>
@@ -310,7 +310,7 @@ export default function Contact() {
                     Enviando mensaje...
                   </div>
                 ) : (
-                                              'Enviar Consulta'
+                  'Enviar Consulta'
                 )}
               </motion.button>
             </div>
