@@ -31,10 +31,13 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-gray-300 mb-6 text-base md:text-lg leading-relaxed">
-              <strong>Abogado especializado en Bolaños de Calatrava, Ciudad Real</strong> con amplia experiencia en diversas áreas del derecho:
-              Extranjería, seguridad social, civil(familia, sucesiones, etc), Administrativo y Laboral. Bufete de abogados comprometido en brindar 
-              soluciones legales reales y cercanas, con atención personalizada en Bolaños de Calatrava 
-              y servicios jurídicos online para toda España y Castilla-La Mancha.
+              <strong>Abogado especializado en Bolaños de Calatrava, Ciudad Real</strong> con amplia experiencia en diversas áreas del derecho.
+              <br className="hidden md:block" />
+              <br className="sm:hidden" />
+              Extranjería, Seguridad Social, Civil (familia, sucesiones, etc.), Administrativo y Laboral.
+              <br className="hidden md:block" />
+              <br className="sm:hidden" />
+              Bufete comprometido con soluciones legales reales y cercanas, con atención personalizada en Bolaños de Calatrava y servicios jurídicos online para toda España y Castilla-La Mancha.
             </p>
             <div className="flex items-center space-x-4">
               <div className="flex items-center space-x-2">
